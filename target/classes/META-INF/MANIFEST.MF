@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: tk.drwrong.helloWorld-client
+Built-By: DrWrong
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1430311409100
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)",tk.
+ drwrong.server.osgi;version="[0.0,1)"
+Tool: Bnd-1.15.0
+Export-Package: tk.drwrong.client.osgi;uses:="tk.drwrong.server.osgi"
+Bundle-Name: HelloWorld Client
+Bundle-Version: 0.0.1.SNAPSHOT
+Bundle-Activator: tk.drwrong.server.osgi.Activator
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_45
+Import-Service: tk.drwrong.server.osgi.IHelloWorldSvc
+
